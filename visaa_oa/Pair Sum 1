@@ -1,0 +1,5 @@
+n = int(input())
+arr = list(map(int, input().split()))
+k = int(input())
+visited = set()
+print("true" if any(k - num in visited or visited.add(num) for num in arr)else "false")
