@@ -1,0 +1,4 @@
+x, n = map(int, input().split())
+aircraft_needed = (n + 99) // 100
+additional_planes = max(0, aircraft_needed - x)
+print(additional_planes)
